@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sinkler Betting</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <script type="module" src="firebase.js"></script>
+        <script type="module" src="index.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1 id="title">Sink Bets</h1>
+        </div>
+        <div class="navbar">
+            <ul id="navlist">
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="events.html">Events</a></li>
+                <li style="float:right;"><a class="navlink" href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class= "form-container">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <br />
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+                <br />
+                <button type="submit">Register</button>
+        </div>
+        <div class="form-container" style="display: none;">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="login-email" required />
+                <br />
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required />
+                <br />
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </body>
+</html>
