@@ -1,5 +1,5 @@
 import { auth } from "../firebase";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword } from "/firebase/auth";
 
 
 function register(){
