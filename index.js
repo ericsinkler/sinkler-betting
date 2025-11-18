@@ -1,4 +1,9 @@
 
+const registerButton = document.getElementById("register-button");
+
+registerButton.addEventListener("click", register);
+
+
 function register(){
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
