@@ -1,4 +1,4 @@
-
+console.log("Auth loaded:", auth);
 const registerButton = document.getElementById("register-button");
 
 registerButton.addEventListener("click", async () => {
