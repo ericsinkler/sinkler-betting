@@ -1,24 +1,22 @@
 
 const registerButton = document.getElementById("register-button");
 
-registerButton.addEventListener("click", register);
-
-
-function register(){
+registerButton.addEventListener("click", async () => {
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
     
-    const handleRegister = async (e) => {
-        e.preventDefault();
-        try{
-            await auth.createUserWithEmailAndPassword(auth, email, password);
-        }
-        catch(error){
-            console.log("Error code: ", error.code);
-            console.log("Error message: ", error.message);
-        }
+    try{
+        await auth.createUserWithEmailAndPassword(email, password);
     }
-}
+    catch(error){
+        console.log("Error code: ", error.code);
+        console.log("Error message: ", error.message);
+    }
+});
+
+
+
+
 
 function login(){
     const email = document.getElementById("email").value;
