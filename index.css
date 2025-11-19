@@ -6,7 +6,7 @@ body{
 }
 
 #title{
-    font-size: 84px;
+    font-size: clamp(2rem, 5vw, 4rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     align-items: center;
